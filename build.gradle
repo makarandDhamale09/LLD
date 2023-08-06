@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'com.diffplug.spotless' version '6.20.0'
+}
+
+group 'com.lld'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+spotlessCheck{
+    enabled true
+}
+
+spotless {
+    java {
+        googleJavaFormat('1.17.0')
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+}
