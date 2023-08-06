@@ -3,7 +3,7 @@ package lld.factoryPattern;
 public class ShapeFactory {
 
   public static Shape getShape(String name) {
-      name = name.toUpperCase();
+    name = name.toUpperCase();
     return switch (name) {
       case "CIRCLE" -> new Circle();
       case "SQUARE" -> new Square();
