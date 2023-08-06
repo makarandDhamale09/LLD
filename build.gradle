@@ -5,7 +5,10 @@ plugins {
 
 group 'com.lld'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '17'
+
+java {
+    sourceCompatibility = '17'
+}
 
 repositories {
     mavenCentral()
@@ -19,8 +22,4 @@ spotless {
     java {
         googleJavaFormat('1.17.0')
     }
-}
-
-dependencies {
-    testImplementation 'junit:junit:4.13.1'
 }
