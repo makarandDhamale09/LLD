@@ -27,6 +27,7 @@ bin/
 /.idea
 /build
 /.gradle
+**/build/
 
 ### Mac OS ###
 .DS_Store
