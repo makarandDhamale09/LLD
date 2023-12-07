@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'com.diffplug.spotless' version '6.20.0'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+spotlessCheck{
+    enabled true
+}
+
+spotless {
+    java {
+        googleJavaFormat('1.17.0')
+    }
+}
