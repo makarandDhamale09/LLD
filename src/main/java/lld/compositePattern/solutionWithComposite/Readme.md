@@ -16,4 +16,4 @@ The below image shows how the classes should be arranged.
 
 ---
 ### UML Diagram
-![screenshot.png](../../../resources/screenshot.png)
+![screenshot.png](../../../../resources/compositeDesignPatternSolution1.png)

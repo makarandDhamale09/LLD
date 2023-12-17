@@ -2,7 +2,11 @@ package lld.compositePattern.problemStatement;
 
 public class Main {
 
-    public static void main(String args[]){
+    /**
+     * The problem with this approach is that we are creating the list of Object and
+     * not of a specific type. So not a good approach.
+     */
+    public static void main(String args[]) {
 
         Directory movieDirectory = new Directory("Movie");
 
@@ -15,6 +19,5 @@ public class Main {
         movieDirectory.add(comedyMovieDirectory);
 
         movieDirectory.ls();
-
     }
 }
