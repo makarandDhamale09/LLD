@@ -2,13 +2,13 @@ package lld.compositePattern.solutionWithComposite;
 
 public class File implements FileSystem {
 
-    String fileName;
+  String fileName;
 
-    public File(String name){
-        this.fileName = name;
-    }
+  public File(String name) {
+    this.fileName = name;
+  }
 
-    public void ls(){
-        System.out.println("file name : " + fileName);
-    }
+  public void ls() {
+    System.out.println("file name : " + fileName);
+  }
 }
